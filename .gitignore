@@ -1,3 +1,5 @@
+/coverage
+/spec/**/*.js
 # Compiled source #
 ###################
 *.com
