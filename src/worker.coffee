@@ -49,6 +49,8 @@ module.exports = (api, validation, couchUtils) ->
     return false
 
   gh.add_user = (user, role, team) ->
+    # make sure the user added to this team has 2FA, etc.
+    # if not, we shouldn't add them to any teams
     if not auth._has_resource_role(user, 'gh', 'user')
       return Promise.resolve()
     get_gh_username(user).then((gh_username) ->

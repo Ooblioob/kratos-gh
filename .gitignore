@@ -1,5 +1,8 @@
+# Testing #
+###########
 /coverage
-/spec/**/*.js
+/_specjs
+
 # Compiled source #
 ###################
 *.com
