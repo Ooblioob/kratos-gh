@@ -3,7 +3,7 @@ Promise = require('pantheon-helpers').promise
 
 module.exports = (api, validation, couchUtils) ->
   conf = couchUtils.conf
-  couchClient = couchUtils.get_system_user()
+  couchClient = couchUtils.nano_system_user
 
   users = api.users
   teams_api = api.teams

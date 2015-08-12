@@ -21,7 +21,7 @@ beforeEvery = () ->
   }
   this.couch_utils = {
     conf: this.config
-    get_system_user: jasmine.createSpy('get_system_user').andReturn('couchClient')
+    nano_system_user: jasmine.createSpy('nano_system_user').andReturn('couchClient')
   }
   this.gh = gh(this.api, this.validation, this.couch_utils)
   this.git = this.gh.testing.git
